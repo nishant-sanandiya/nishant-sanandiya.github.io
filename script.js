@@ -189,11 +189,9 @@ function setDuration(className, experience) {
 }
 
 // Calculating experiences
-const experienceOfAsite = calculateDuration("01/02/2023", todayDate.toString());
-const experienceOfWhisttler = calculateDuration("01/12/2021", "30/04/2022");
-const experienceOfFrshr = calculateDuration("01/07/2021", "31/12/2021");
+const experienceOfAgile = calculateDuration("01/03/2023", todayDate.toString());
+const experienceOfSst = calculateDuration("01/02/2021", "01/03/2023");
 
 // Setting the text content
-setDuration(".asite-duration", experienceOfAsite);
-setDuration(".whisttler-duration", experienceOfWhisttler);
-setDuration(".frshr-duration", experienceOfFrshr);
+setDuration(".agile-duration", experienceOfAgile);
+setDuration(".sst-duration", experienceOfSst);
