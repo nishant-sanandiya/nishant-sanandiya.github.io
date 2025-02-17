@@ -95,7 +95,7 @@ dayNight.addEventListener("click", () => {
   } else {
     localStorage.setItem("theme", "light");
     hideWhiteColor.style.display = "none";
-    localStorage.setItem("color", "color-1");
+    localStorage.setItem("color", "color-4");
     changeColor();
   }
   updateIcon();
