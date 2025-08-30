@@ -992,3 +992,48 @@ ul {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+.skills-icon-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 30px;
+  justify-items: center;
+  padding: 0 15px;
+}
+
+.skills-item {
+  text-align: center;
+}
+
+.skill-icon {
+  height: 75px;
+  width: 75px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-icon i,
+.skill-icon img {
+  font-size: 36px;
+  height: 36px;
+  width: 36px;
+  object-fit: contain;
+  color: var(--skin-color);
+}
+
+/* Responsive (2 columns on tablets) */
+@media (max-width: 768px) {
+  .skills-icon-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive (1 column on mobile) */
+@media (max-width: 500px) {
+  .skills-icon-section {
+    grid-template-columns: 1fr;
+  }
+}
